@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+<div class="bg-image">
+
+<div class="bg-text"> </div>
+<head>
+  <title>Checkout</title>
+  <script src="https://js.stripe.com/v3/"></script>
+</head>
+
+<body background = "background_snow_animated.gif" >
+</div>
+
+<h1 style="text-align:center" size="5"> Chuck Mullen @ HOLY DIVER HOLIDAY HANGOVER</h1>
+<p style="text-align:center">  Holy Diver, 1517 21st Street, Sacramento, CA 95811 December 27, 2019 at 7:00PM</p>
+
+<img style="text-align:center" src="57128391_2339363252780462_2846736390014631936_n.jpg" alt="Paris" class="center">
+
+
+
+<p style="text-align:center" Reserve a limited spot RIGHT NOW! </p>
+<p style="text-align:center"> Direct payment go strait to the artist. </p>
+
+<div id="card-element">
+  <!-- Elements will create input elements here -->
+
+<!-- We'll put the error messages in this element -->
+<div id="card-errors" role="alert"></div>
+
+<button id="submit" >Pay</button>
+
+
+
+<script>
+var stripe = Stripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
+var elements = stripe.elements();
+</script>
+
+
+
+<style>
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  
+  .h1 
+font-family: 'Russian';
+}
+h1{font-size:30px;
+     height:20px;}
+
+@font-face { font-family: Russian; src: url('Russian.ttf'); } 
+      h1 {
+         font-family: Russian
+      }
+     
+   .bg-image {
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+</style>
+
+</body>
+</html>
